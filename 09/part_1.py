@@ -15,13 +15,13 @@ class Knot:
 
 
 # This distance means that the tail won't need to be updated
-MAX_DISTANCE_BETWEEN_HEAD_AND_TAIL = 1.4142135623730951
+MAX_DISTANCE_BETWEEN_HEAD_AND_TAIL = 1
 
 
-def calculate_distance(head: Point, tail: Point) -> float:
+def calculate_distance(head: Point, tail: Point) -> int:
     """Euclidean distance"""
     distance = math.pow(tail.x - head.x, 2) + math.pow(tail.y - head.y, 2)
-    return math.sqrt(distance)
+    return int(math.sqrt(distance))
 
 
 def update_tail_position(head: Point, tail: Point) -> Point:
