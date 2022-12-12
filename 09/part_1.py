@@ -8,12 +8,6 @@ class Point:
     y: int
 
 
-@dataclass
-class Knot:
-    head: Point
-    tail: Point
-
-
 # This distance means that the tail won't need to be updated
 MAX_DISTANCE_BETWEEN_HEAD_AND_TAIL = 1
 
